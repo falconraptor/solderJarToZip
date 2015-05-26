@@ -22,7 +22,7 @@ object SolderJarToZip {
   def main(args: Array[String]) {
     var jar = new File("hi")
     jar = jar.getAbsoluteFile
-    for (t <- jar.getParentFile.listFiles() if !t.getName.equals("solderJarToZip.jar") && t.getName.contains(".jar")) {
+    for (t <- jar.getParentFile.listFiles() if !t.getName.equals("solderJarToZip.jar") && t.getName.contains(".jar") && t.getName.contains("-")) {
       var name = t.getName.toLowerCase.replaceAll(" ", "-")
       if (name.lastIndexOf("-") != -1) name = name.substring(0, name.lastIndexOf("-"))
       val f = new File(name)

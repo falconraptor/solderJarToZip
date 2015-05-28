@@ -19,5 +19,5 @@ This program does not work correctly if the mod jar does not have a - in it. Eve
     - [List of folders the same as your mod names]
       - [Mod jar name].zip
         - mods
-          -Mod Jar
+          - Mod Jar
     - This program
